@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="manifest" href="/manifest.webmanifest" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <meta name="theme-color" content="%SEO_THEME_COLOR%" />
+
+    <!--
+      SEO values are injected automatically from portfolio/seo.ts at build time.
+      Edit that file — do not hard-code values here.
+    -->
+
+    <!-- Primary meta -->
+    <title>%SEO_TITLE%</title>
+    <meta name="description" content="%SEO_DESCRIPTION%" />
+    <meta name="keywords" content="%SEO_KEYWORDS%" />
+    <meta name="author" content="%SEO_AUTHOR%" />
+    <link rel="canonical" href="%SEO_URL%" />
+
+    <!-- hreflang — bilingual EN / FR portfolio at a single URL -->
+    %SEO_HREFLANG%
+
+    <!-- Open Graph (Facebook, LinkedIn, Slack…) -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="%SEO_URL%" />
+    <meta property="og:title" content="%SEO_TITLE%" />
+    <meta property="og:description" content="%SEO_DESCRIPTION%" />
+    %SEO_OG_IMAGE%
+    <meta property="og:locale" content="en_US" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="%SEO_TITLE%" />
+    <meta name="twitter:description" content="%SEO_DESCRIPTION%" />
+    %SEO_TWITTER_CREATOR%
+
+    <!-- JSON-LD structured data (schema.org/Person) — auto-generated from portfolio/seo.ts -->
+    <script type="application/ld+json">
+    %SEO_JSON_LD%
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>

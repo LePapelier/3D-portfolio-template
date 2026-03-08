@@ -1,0 +1,6 @@
+# Allow all web crawlers to index the portfolio
+User-agent: *
+Allow: /
+
+# Sitemap location (root-relative — works on any domain and subpath deployment)
+Sitemap: /sitemap.xml

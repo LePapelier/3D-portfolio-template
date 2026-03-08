@@ -1,0 +1,10 @@
+node_modules
+dist
+.env
+
+# Private contact/email artifacts (never commit)
+public/email.svg
+public/email-*.svg
+public/contact-email.*
+public/private-contact/**
+scripts/.secrets/**
